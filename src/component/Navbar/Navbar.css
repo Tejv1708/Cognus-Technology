@@ -1,0 +1,41 @@
+.info-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+    justify-content: space-between;
+    background-color: green;
+}
+
+.contact-info-container {
+    margin-right: 0;
+
+}
+
+.message {
+    margin-left: 0;
+}
+
+.info-container a.book-now-link {
+    text-decoration: none;
+    color: #333;
+
+}
+
+
+.info-container span.contact-info {
+
+    margin-left: 0;
+}
+
+
+@media (max-width: 600px) {
+    .info-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-container span.contact-info {
+        margin: 5px 0;
+    }
+}
