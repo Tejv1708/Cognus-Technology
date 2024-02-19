@@ -2,7 +2,6 @@
     display: block;
     margin: 30px 200px;
     padding: 10px 20px;
-
     width: 200px;
     height: 50px;
     font-size: 16px;
@@ -19,15 +18,16 @@ h5 {
 }
 
 .box-yellow {
+    position: relative;
     width: 50px;
     height: 50px;
     background-color: yellow;
     border: 2px solid #333;
     border-radius: 8px;
-
 }
 
 .box-red {
+    position: relative;
     width: 50px;
     height: 50px;
     background-color: red;
@@ -36,6 +36,7 @@ h5 {
 }
 
 .box-blue {
+    position: relative;
     width: 50px;
     height: 50px;
     background-color: rgb(5, 5, 130);
@@ -66,11 +67,31 @@ h5 {
     right: 0;
     transform: translateY(-50%);
     max-width: 500px;
-    /* Set a maximum width for the anime element */
     width: auto;
-    /* Allow the width to adjust based on the aspect ratio of the image */
     z-index: -1;
-    /* Place the anime element behind other content */
 }
 
-/* Rest of your existing CSS remains unchanged */
+.transparent-box {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+
+}
+
+@media (max-width: 768px) {
+    .page-button {
+        width: 100%;
+    }
+
+    .page-container {
+        margin-left: 0;
+    }
+
+    .anime {
+        top: 60%;
+    }
+}

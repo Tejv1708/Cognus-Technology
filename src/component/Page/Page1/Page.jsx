@@ -9,7 +9,9 @@ const Page = () => {
           <h1>Get Your Job In 3 Steps</h1>
         </div>
         <div className="step">
-          <div className="box-yellow"></div>
+          <div className="box-yellow">
+            <div className="transparent-box"></div>
+          </div>
           <div>
             <h3>Create Profile</h3>
             <h5>
@@ -19,7 +21,9 @@ const Page = () => {
         </div>
         {/*  */}
         <div className="step">
-          <div className="box-red"></div>
+          <div className="box-red">
+            <div className="transparent-box"></div>
+          </div>
           <div>
             <h3>Instant Result </h3>
             <h5>
@@ -30,7 +34,9 @@ const Page = () => {
         </div>
         {/*  */}
         <div className="step">
-          <div className="box-blue"></div>
+          <div className="box-blue">
+            <div className="transparent-box"></div>
+          </div>
           <div>
             <h3>Apply Directly </h3>
             <h5>
