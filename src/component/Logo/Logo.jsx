@@ -1,4 +1,5 @@
-import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser, faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import CompanyLogo from "./Logo.png";
 import "./Logo.css";
 const Logo = () => {
@@ -12,12 +13,17 @@ const Logo = () => {
             type="text"
             className="login-input"
           />
-          <span className="login-btn">Login</span>
-          <span className="signup-btn">SignUp</span>
+          <span className="login-btn">
+            <FontAwesomeIcon icon={faUser} />
+          </span>
+          <span className="signup-btn">
+            {" "}
+            <FontAwesomeIcon icon={faCartShopping} />
+          </span>
         </div>
       </div>
 
-      <div className="container">
+      <div className="custom-selected">
         <select className="selector-box" name="type-1" id="type-1">
           <option value="option-1">Option 1</option>
           <option value="option-2">Option 2</option>
@@ -98,7 +104,7 @@ const Logo = () => {
           <option value="option-5">Option 5</option>
           <option value="option-6">Option 6</option>
         </select>
-        <button className="logo">Order Now</button>
+        <button className="logo-button">Order Now</button>
       </div>
     </>
   );
